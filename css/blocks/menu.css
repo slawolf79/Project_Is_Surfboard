@@ -1,0 +1,28 @@
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
+  margin-right: 18px;
+}
+
+.menu__item:last-child {
+  margin-right: 0px;
+}
+
+.menu__link {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.menu__link:hover {
+  color: #FEDB3F;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}

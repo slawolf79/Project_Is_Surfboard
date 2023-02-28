@@ -1,0 +1,81 @@
+@charset "UTF-8";
+html, body {
+  height: 100%;
+}
+
+body {
+  font-size: baseFontSize;
+  font-family: "Alegreya Sans", sans-serif;
+  color: #fff;
+  line-height: 1.42;
+  position: relative;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+  width: 100vw;
+  min-width: containerWidth20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.wrapper__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  width: containerWidth;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  margin: 0px;
+  /* Отступ слева в браузере IE и Opera */
+  padding: 0px;
+  /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
+ul li {
+  list-style-type: none;
+  /* Убираем маркеры */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
