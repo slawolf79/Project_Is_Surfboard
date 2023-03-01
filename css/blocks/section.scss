@@ -1,0 +1,34 @@
+.section {
+  height: 100vh;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section__title {
+  font-size: 48px;
+  font-weight: 700;
+  color: black;
+  -webkit-text-stroke-color: #292929;
+  margin-bottom: 53px;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+.section__subtitle {
+  font-weight: 400;
+}
+
+.section__title-reviews {
+  margin-bottom: 32px;
+}
+
+.section__title-order {
+  color: $white;
+  margin-bottom: 83px;
+  font-size: 48px;
+  font-weight: bold;
+
+}
