@@ -1,23 +1,22 @@
-html{
+html {
   font-size: $baseFontSize;
 
 }
 
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0px;
 }
 
 body {
   font-size: $baseFontSize;
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: "Alegreya Sans", sans-serif;
   color: #fff;
-  line-height: 1.22;
+  line-height: 1.42;
   position: relative;
   margin: 0px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   color: $grey;
 }
 

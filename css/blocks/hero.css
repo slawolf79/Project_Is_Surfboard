@@ -1,5 +1,5 @@
 .hero {
-  background: url("/img/bg-surf.jpeg") 50%/cover no-repeat;
+  background: url("../img/bg-surf.jpeg") center top 80% no-repeat;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -1,4 +1,4 @@
-@charset "UTF-8";
+
 @import "layout/normalize.css";
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;700;800&display=swap");
 html {
@@ -94,7 +94,7 @@ img {
 }
 
 .hero {
-  background: url("/img/bg-surf.jpeg") center top 80% no-repeat;
+  background: url("../img/bg-surf.jpeg") center top 80% no-repeat;
   background-size: cover;
   height: 100vh;
   min-height: 652px;
