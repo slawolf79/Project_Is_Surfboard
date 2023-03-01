@@ -94,7 +94,7 @@ img {
 }
 
 .hero {
-  background: url("./img/bg-surf.jpeg") center top 80% no-repeat;
+  background: url("../img/bg-surf.jpeg") center top 80% no-repeat;
   background-size: cover;
   height: 100vh;
   min-height: 652px;
@@ -620,7 +620,7 @@ img {
   border-radius: 0px;
 }
 .radio--checkbox .radio__visible::before {
-  background: url("./img/check.png") center center no-repeat;
+  background: url("/img/check.png") center center no-repeat;
 }
 
 .radio__elem {
