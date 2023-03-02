@@ -209,6 +209,7 @@ img {
   height: -moz-max-content;
   height: max-content;
   margin-top: 10%;
+  margin-bottom: 64px;
 }
 
 .banner__caption {
@@ -237,7 +238,6 @@ img {
   font-size: 16px;
   text-transform: uppercase;
   text-decoration: none;
-  margin-bottom: 64px;
   border: none;
 }
 
@@ -366,6 +366,7 @@ img {
 .headline__subtitle {
   padding: 0 27%;
   color: #666666;
+  margin-bottom: 62px;
 }
 
 .benefits {
@@ -482,7 +483,7 @@ img {
 .reviews__text {
   font-weight: 400;
   margin-bottom: 25px;
-  color: black;
+  color: #292929;
 }
 
 .reviews__author {
@@ -561,6 +562,10 @@ img {
   margin-bottom: 12px;
 }
 
+.form__row:last-child {
+  margin-bottom: 0px;
+}
+
 .form__block {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -585,7 +590,7 @@ img {
   outline: none;
 }
 .form__input--textarea {
-  height: 152px;
+  height: 165px;
   resize: none;
 }
 
@@ -617,6 +622,9 @@ img {
 }
 .radio--checkbox .radio__visible::before {
   background: url(../img/check.png) center center no-repeat;
+}
+.radio:last-child {
+  margin-right: 0px;
 }
 
 .radio__elem {
@@ -652,7 +660,6 @@ img {
 .radio__title {
   font-size: 19px;
   margin-right: 36px;
-  margin-bottom: 22px;
 }
 
 .fixed-menu {
@@ -667,6 +674,9 @@ img {
 }
 .fixed-menu__item--active .fixed-menu__link {
   border-color: #fff;
+}
+.fixed-menu__item:last-child {
+  margin-bottom: 0px;
 }
 
 .fixed-menu__link {
