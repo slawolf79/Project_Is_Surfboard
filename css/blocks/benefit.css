@@ -1,18 +1,17 @@
 .benefit {
   text-align: center;
-
 }
 
-
 .benefit__image-wrapper {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   width: 128px;
   height: 128px;
   position: relative;
-  background:#F2F5F4;
+  background: #F2F5F4;
   border-radius: 50%;
   overflow: hidden;
-  
 }
 
 .benefit__icon {
@@ -21,21 +20,18 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .benefit__title {
   font-size: 27px;
   font-weight: 700;
-  color: $black;
+  color: black;
+  -webkit-text-stroke-color: #292929;
   margin-bottom: 20px;
-
 }
 
 .benefit__desc {
   font-weight: 300;
-
 }
-
-
-

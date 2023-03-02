@@ -16,6 +16,10 @@
     display: flex;
     margin-bottom: 12px;
 
+    &:last-child {
+        margin-bottom: 0px;
+    }
+
 }
 
 .form__block {
@@ -33,7 +37,6 @@
     width: 100%;
     border: none;
     padding: 18px 12px;
-    // border: 3px solid #FEDB3F;
     border: 3px solid transparent;
     border-radius: 4px;
 
@@ -43,7 +46,7 @@
     }
 
     &--textarea {
-        height: 152px;
+        height: 165px;
         resize: none;
 
     }

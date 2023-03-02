@@ -9,10 +9,14 @@
             border-radius: 0px;
 
             &::before {
-                background: url(../img/check.png) center center no-repeat;
+                background: url('../img/check.png') center center no-repeat;
             }
         }
     
+    }
+
+    &:last-child {
+        margin-right: 0px;
     }
 
 }
@@ -54,5 +58,4 @@
 .radio__title{
     font-size: 19px;
     margin-right: 36px;
-    margin-bottom: 22px;
 }

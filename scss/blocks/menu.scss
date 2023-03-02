@@ -1,7 +1,6 @@
 
 .menu {
   display: flex;
-
 }
 
 .menu__item {
@@ -23,5 +22,6 @@
 
 .menu__link:hover {
   transition: .7s;
-  text-decoration:underline $darkblue;
+  text-decoration: underline;
+  text-decoration-color: $darkblue;
 }

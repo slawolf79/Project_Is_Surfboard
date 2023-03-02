@@ -1,5 +1,7 @@
 .banner {
   width: 52%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
   height: max-content;
   margin-top: 10%;
   margin-bottom: 64px;
@@ -22,4 +24,3 @@
   line-height: 100%;
   margin-bottom: 33.5px;
 }
-

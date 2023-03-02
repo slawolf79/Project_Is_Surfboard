@@ -1,0 +1,35 @@
+.bullets {
+  display: flex;
+  align-content: center;
+  align-items: flex-end;
+}
+
+.bullets__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bullet {
+  display: inline-flex;
+  margin-right: 33px;
+  align-items: center;
+}
+
+.bullet__icon {
+  width: 34.69px;
+  height: 34.69px;
+  margin-right: 14px;
+}
+
+.bullet__text {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  width: 90px;
+  height: 36px;
+}
+
+.bullet:last-child {
+  margin-right: 0px;
+}

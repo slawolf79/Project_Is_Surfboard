@@ -5,7 +5,8 @@ html {
   font-size: 18px;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0px;
 }
@@ -207,7 +208,6 @@ a {
   height: -moz-max-content;
   height: max-content;
   margin-top: 10%;
-  margin-bottom: 64px;
 }
 
 .banner__caption {
@@ -236,6 +236,7 @@ a {
   font-size: 16px;
   text-transform: uppercase;
   text-decoration: none;
+  margin-bottom: 64px;
   border: none;
 }
 
@@ -326,8 +327,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
 }
-
-.section__title {
+.section .section__title {
   font-size: 48px;
   font-weight: 700;
   color: black;
@@ -336,16 +336,13 @@ a {
   text-align: center;
   text-transform: uppercase;
 }
-
-.section__subtitle {
+.section .section__subtitle {
   font-weight: 400;
 }
-
-.section__title-reviews {
+.section .section__title-reviews {
   margin-bottom: 32px;
 }
-
-.section__title-order {
+.section .section__title-order {
   color: #fff;
   margin-bottom: 83px;
   font-size: 48px;
@@ -425,7 +422,8 @@ a {
 .benefit__title {
   font-size: 27px;
   font-weight: 700;
-  color: #292929;
+  color: black;
+  -webkit-text-stroke-color: #292929;
   margin-bottom: 20px;
 }
 
@@ -555,9 +553,6 @@ a {
   display: flex;
   margin-bottom: 12px;
 }
-.form__row:last-child {
-  margin-bottom: 0px;
-}
 
 .form__block {
   -webkit-box-flex: 1;
@@ -583,7 +578,7 @@ a {
   outline: none;
 }
 .form__input--textarea {
-  height: 165px;
+  height: 152px;
   resize: none;
 }
 
@@ -614,10 +609,7 @@ a {
   border-radius: 0px;
 }
 .radio--checkbox .radio__visible::before {
-  background: url("../img/check.png") center center no-repeat;
-}
-.radio:last-child {
-  margin-right: 0px;
+  background: url(../img/check.png) center center no-repeat;
 }
 
 .radio__elem {
@@ -653,6 +645,7 @@ a {
 .radio__title {
   font-size: 19px;
   margin-right: 36px;
+  margin-bottom: 22px;
 }
 
 .fixed-menu {
@@ -667,9 +660,6 @@ a {
 }
 .fixed-menu__item--active .fixed-menu__link {
   border-color: #fff;
-}
-.fixed-menu__item:last-child {
-  margin-bottom: 0px;
 }
 
 .fixed-menu__link {

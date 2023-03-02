@@ -1,7 +1,9 @@
 .contacts {
-  color: $white;
+  color: #ffffff;
   font-style: bold;
   text-align: right;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
@@ -10,10 +12,9 @@
 }
 
 [href] {
-  color: $white;
+  color: #ffffff;
   text-decoration: none;
 }
-
 
 .contacts__phone {
   text-decoration: none;
