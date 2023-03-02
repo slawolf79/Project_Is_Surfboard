@@ -1,8 +1,6 @@
-
 .reviews__display {
-  background: $white;
+  background: #FFFFFF;
   padding: 42px 42px 42px;
-  
 }
 
 .reviews__display:hover {
@@ -28,25 +26,23 @@
 .reviews__content {
   flex: 1;
   padding: 0 8%;
-  
 }
 
 .reviews__title {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 14px;
-  color: $black;
 }
 
 .reviews__text {
   font-weight: 400;
   margin-bottom: 25px;
-  color: $black;
 }
 
 .reviews__author {
   font-weight: 500;
-  color: $black;
+  color: black;
+  -webkit-text-stroke-color: #292929;
 }
 
 .reviews__swicher {

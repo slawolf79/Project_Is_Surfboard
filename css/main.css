@@ -326,26 +326,21 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
 }
-
-.section__title {
+.section .section__title {
   font-size: 48px;
   font-weight: 700;
-  color: black;
-  -webkit-text-stroke-color: #292929;
+  color: #292929;
   margin-bottom: 53px;
   text-align: center;
   text-transform: uppercase;
 }
-
-.section__subtitle {
+.section .section__subtitle {
   font-weight: 400;
 }
-
-.section__title-reviews {
+.section .section__title-reviews {
   margin-bottom: 32px;
 }
-
-.section__title-order {
+.section .section__title-order {
   color: #fff;
   margin-bottom: 83px;
   font-size: 48px;
@@ -363,6 +358,7 @@ a {
 
 .headline__subtitle {
   padding: 0 27%;
+  color: #666666;
 }
 
 .benefits {
@@ -431,6 +427,7 @@ a {
 
 .benefit__desc {
   font-weight: 300;
+  color: #666666;
 }
 
 .reviews__display {
