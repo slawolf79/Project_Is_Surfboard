@@ -474,11 +474,13 @@ img {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 14px;
+  color: black;
 }
 
 .reviews__text {
   font-weight: 400;
   margin-bottom: 25px;
+  color: black;
 }
 
 .reviews__author {
