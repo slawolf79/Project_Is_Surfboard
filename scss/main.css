@@ -1,5 +1,5 @@
 @import "layout/normalize.css";
-@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap");
 html {
   font-size: 18px;
 }
@@ -365,6 +365,7 @@ img {
 
 .headline__subtitle {
   padding: 0 27%;
+  color: #666666;
 }
 
 .benefits {
@@ -433,6 +434,7 @@ img {
 
 .benefit__desc {
   font-weight: 300;
+  color: #666666;
 }
 
 .reviews__display {
@@ -485,7 +487,7 @@ img {
 
 .reviews__author {
   font-weight: 500;
-  color: black;
+  color: #292929;
   -webkit-text-stroke-color: #292929;
 }
 
