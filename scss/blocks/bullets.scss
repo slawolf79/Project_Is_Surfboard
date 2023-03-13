@@ -3,6 +3,9 @@
   align-content: center;
   align-items: flex-end;
 
+  @include tablets {
+    display: none;
+  }
 }
 
 .bullets__list {
@@ -13,24 +16,30 @@
 
 .bullet {
   display: inline-flex;
-  margin-right: 33px;
+  margin-right: rem(33px);
   align-items: center;
-
 }
+
 .bullet__icon {
-  width: 34.69px;
-  height: 34.69px;
-  margin-right: 14px;
+  width: rem(34.69px);
+  height: rem(34.69px);
+  margin-right: rem(14px);
+}
+
+.bullet__icon-elem {
+  fill: $white;
+  width: rem(34.69px);
+  height: rem(34.69px);
 }
 
 .bullet__text {
-  font-size: 16px;
+  font-size: rem(16px);
   font-weight: 700;
-  line-height: 18px;
-  width: 90px;
-  height: 36px;
+  line-height: 1.2;
+  width: rem(90px);
+  height: rem(36px);
 }
 
 .bullet:last-child {
-  margin-right: 0px;
+  margin-right: rem(0px);
 }

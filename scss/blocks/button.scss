@@ -1,9 +1,9 @@
 .button {
-    border-radius: 35px;
-    padding: 21px 41px;
+    border-radius: rem(35px);
+    padding: rem(21px) rem(41px);
     color: #000000;
     font-weight: 800;
-    font-size: 16px;
+    font-size: rem(16px);
     text-transform: uppercase;
     text-decoration: none;
     border: none;
@@ -16,8 +16,8 @@
 }
 
 .button--color--yellow:hover {
-    background: $white;
-    color: $darkblue;
+    background: #000000;
+    color: $yellow;
     transition: .7s;
 }
 
@@ -27,6 +27,6 @@
     text-transform: none;
 
     &:hover {
-        color: $darkblue;
+        color: $yellow;
     }
 }

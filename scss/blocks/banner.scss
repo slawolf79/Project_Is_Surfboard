@@ -1,28 +1,60 @@
-
 .banner {
-  width: 52%;
+  width: 46%;
   height: max-content;
-  margin-top: 10%;
-  margin-bottom: 64px;
+  margin-top: 25%;
+  margin-bottom: rem(64px);
 
+  @include tablets {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 12%;
   }
 
+  @include phones {
+    margin-top: 20%;
+  }
+
+  @include phones-small {
+    margin-top: 25%;
+  }
+}
+
 .banner__caption {
-  font-size: 48px;
-  font-style: bold;
+  font-size: rem(48px);
   font-weight: 700;
-  line-height: 57.6px;
+  line-height: 1.4;
   line-height: 100%;
-  margin-bottom: 17px;
+  margin-bottom: rem(17px);
   text-transform: uppercase;
 
+  @include tablets {
+    margin-top: 35%;
+    width: 85%;
+  }
+
+  @include phones {
+    font-size: rem(40px);
+  }
+
+  @include phones-small {
+    font-size: rem(35px);
+  }
 }
 
 .banner__text {
-  font-size: 21px;
+  font-size: rem(21px);
   font-style: Regular;
   font-weight: 400;
   line-height: 100%;
-  margin-bottom: 33.5px;
-}
+  margin-bottom: rem(33.5px);
+  padding-right: 10%;
 
+  @include tablets {
+    padding: 0 25%;
+  }
+}

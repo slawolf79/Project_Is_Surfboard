@@ -1,5 +1,11 @@
 .benefits {
   display: flex;
+  text-align: center;
+
+  @include phones {
+    flex-direction: column;
+    text-align: left;      
+  }
 
 }
 
@@ -11,22 +17,34 @@
   &::before {
     content: url('/img/snape.png');
     position: absolute;
-    top: 50px;
-    right: 0;
+    top: rem(50px);
+    right: rem(0px);
     transform: translateX(50%);
+
+    @include tablets {
+      display: none;
+    }
      
   }
 
   &:first-child {
-    padding-left: 0;
+    padding-left: rem(0px);
   }
 
   &:last-child {
-    padding-right: 0;
+    padding-right: rem(0px);
 
     &::before {
       display: none;
     }
 
   }
+
+  @include phones {
+    padding: 0;
+    
+    &:last-child {
+        padding-bottom: rem(65px);
+    }
+}
 }

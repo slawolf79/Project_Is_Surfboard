@@ -1,14 +1,15 @@
 .headline {
-  margin-bottom: 62px;
+  margin-bottom: rem(62px);
   text-align: center;
 }
 
 
 .headline__title {
-  margin-bottom: 17px;
+  margin-bottom: rem(17px);
 }
 
 .headline__subtitle {
   padding: 0 27%;
   color: $grey;
 }
+
