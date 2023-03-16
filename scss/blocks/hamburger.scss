@@ -2,7 +2,7 @@
     width: 26px;
     height: 24px;
     display: none;
-    position: relative;
+    position: fixed;
     z-index: $z-hamburger;
 
     @include tablets {
