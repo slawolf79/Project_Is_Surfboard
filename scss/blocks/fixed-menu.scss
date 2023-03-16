@@ -3,7 +3,13 @@
     top: 40%;
     right: 3%;
     z-index: $z-fixed-menu;
+
+    @include tablets {
+        display: none;
+    }
+    
 }
+
 
 .fixed-menu__item {
    margin-bottom: rem(7px); 
@@ -38,4 +44,5 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    
 }

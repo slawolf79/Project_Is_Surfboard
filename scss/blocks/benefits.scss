@@ -43,8 +43,8 @@
   @include phones {
     padding: 0;
     
-    &:last-child {
-        padding-bottom: rem(65px);
-    }
+    // &:last-child {
+    //     padding-bottom: rem(65px);
+    // }
 }
 }

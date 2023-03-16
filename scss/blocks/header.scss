@@ -28,7 +28,7 @@
 
   @include phones-small {
     padding-left: rem(5px);
-}
+  }
 
 }
 
@@ -48,7 +48,7 @@
     position: fixed;
     width: 100%;
     height: 100vh;
-    left: -100%;
+    left: 100%;
     top: 0;
     display: flex;
     justify-content:center;

@@ -6,6 +6,11 @@
 
   @include phones {
     flex-direction: row;
+    margin-bottom: rem(31px);
+
+    &:last-child {
+      margin-bottom: rem(0px);
+    }
   }
 
 }
@@ -31,7 +36,7 @@
   overflow: hidden;
 
   @include phones {
-    margin-bottom: rem(31px);
+    margin-bottom: rem(0px);
   }
 
 }

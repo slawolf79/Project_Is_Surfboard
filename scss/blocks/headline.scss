@@ -1,15 +1,35 @@
 .headline {
-  margin-bottom: rem(62px);
+  margin-bottom: rem(49px);
   text-align: center;
+
+  @include phones {
+    margin-bottom: rem(53px);
+  }
 }
 
 
 .headline__title {
   margin-bottom: rem(17px);
+
+  @include phones {
+    margin-bottom: rem(0px);
+  }
 }
 
 .headline__subtitle {
   padding: 0 27%;
   color: $grey;
+
+  @include tablets {
+    padding: 0 22%;
+  }
+
+  @include phones {
+    padding: 0 8%;
+  }
+
+  @include phones-small {
+    padding: 0 4%;
+  }
 }
 
