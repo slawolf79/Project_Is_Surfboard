@@ -120,8 +120,6 @@ img {
   margin-top: 0;
   color: #fff;
   font-weight: 700;
-  -webkit-box-shadow: 0 4px 4px 0 #000000;
-          box-shadow: 0 4px 4px 0 #000000;
 }
 
 .hero__container {
@@ -139,6 +137,11 @@ img {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+@media screen and (max-width: 768px) {
+  .hero__container {
+    height: 80%;
+  }
 }
 
 .header {
@@ -209,7 +212,7 @@ img {
     position: fixed;
     width: 100%;
     height: 100vh;
-    left: -100%;
+    left: 100%;
     top: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -380,7 +383,7 @@ img {
   width: 26px;
   height: 24px;
   display: none;
-  position: relative;
+  position: fixed;
   z-index: 50;
 }
 @media screen and (max-width: 768px) {
@@ -485,7 +488,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .banner__caption {
-    font-size: 2.2222222222rem;
+    font-size: 2.1666666667rem;
   }
 }
 @media screen and (max-width: 370px) {
@@ -643,17 +646,42 @@ img {
 }
 
 .headline {
-  margin-bottom: 3.4444444444rem;
+  margin-bottom: 2.7222222222rem;
   text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .headline {
+    margin-bottom: 2.9444444444rem;
+  }
 }
 
 .headline__title {
   margin-bottom: 0.9444444444rem;
 }
+@media screen and (max-width: 480px) {
+  .headline__title {
+    margin-bottom: 0rem;
+  }
+}
 
 .headline__subtitle {
   padding: 0 27%;
   color: #666666;
+}
+@media screen and (max-width: 768px) {
+  .headline__subtitle {
+    padding: 0 22%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .headline__subtitle {
+    padding: 0 8%;
+  }
+}
+@media screen and (max-width: 370px) {
+  .headline__subtitle {
+    padding: 0 4%;
+  }
 }
 
 .benefits {
@@ -705,9 +733,6 @@ img {
   .benefits__item {
     padding: 0;
   }
-  .benefits__item:last-child {
-    padding-bottom: 3.6111111111rem;
-  }
 }
 
 .benefit {
@@ -729,6 +754,10 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-bottom: 1.7222222222rem;
+  }
+  .benefit:last-child {
+    margin-bottom: 0rem;
   }
 }
 
@@ -760,7 +789,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .benefit__image-wrapper {
-    margin-bottom: 1.7222222222rem;
+    margin-bottom: 0rem;
   }
 }
 
@@ -1190,6 +1219,11 @@ img {
   top: 40%;
   right: 3%;
   z-index: 100;
+}
+@media screen and (max-width: 768px) {
+  .fixed-menu {
+    display: none;
+  }
 }
 
 .fixed-menu__item {
