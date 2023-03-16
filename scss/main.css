@@ -382,6 +382,8 @@ img {
 .hamburger {
   width: 26px;
   height: 24px;
+  top: 4%;
+  right: 3%;
   display: none;
   position: fixed;
   z-index: 50;
