@@ -1,6 +1,8 @@
 .hamburger {
     width: 26px;
     height: 24px;
+    top: 4%;
+    right: 3%;
     display: none;
     position: fixed;
     z-index: $z-hamburger;
@@ -48,4 +50,72 @@
         }
     }
 }
+
+
+// .cross {
+//     width: 4px;
+//     height: 26px;
+//     background: black;
+//     top: 5%;
+//     right: 3%;
+//     display: none;
+//     transform: rotate(45deg);
+//     position: fixed;
+//     z-index: $z-hamburger;
+
+//     @include tablets {
+//         display: block;
+//     }
+// }
+
+// .cross:after {
+//     content: "";
+//     display: block;
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: rotate(-2deg) translateY(-2px) translateX(-13px);
+//     width: 26px;
+//     height: 4px;
+//     background: black;
+
+// }
+
+
+// .hamburger {
+//     width: 26px;
+//     height: 4px;
+//     top: 5%;
+//     right: 3%;
+//     display: none;
+//     background: $black;
+//     position: fixed;
+//     z-index: $z-hamburger;
+    
+//     @include tablets {
+//         display: block;
+//     }
+
+// }
+
+// .hamburger:after, .hamburger:before {
+//     content: "";
+//     display: block;
+//     width: 26px;
+//     height: 4px;
+//     background: $black;
+//     position: absolute;
+// }
+
+// .hamburger:after {
+//     top: 100%;
+//     margin-top: 5px;
+    
+// }
+  
+// .hamburger:before {
+//     bottom: 100%;
+//     margin-bottom: 5px;
+// }
+
 
