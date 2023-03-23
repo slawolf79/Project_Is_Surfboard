@@ -3,10 +3,16 @@
     top: 40%;
     right: 3%;
     z-index: $z-fixed-menu;
+
+    @include tablets {
+        display: none;
+    }
+    
 }
 
+
 .fixed-menu__item {
-   margin-bottom: 7px; 
+   margin-bottom: rem(7px); 
 
    &--active {
     .fixed-menu__link {
@@ -14,23 +20,23 @@
     }
    }
    &:last-child {
-    margin-bottom: 0px;
+    margin-bottom: rem(0px);
    }
 }
 
 .fixed-menu__link {
-    width: 18px;
-    height: 18px;
+    width: rem(18px);
+    height: rem(18px);
     border-radius: 50%;
-    border: 1px solid transparent;
+    border: rem(1px) solid transparent;
     display: block;
     position: relative;
 
     &::before {
         content: "";
         display: block;
-        width: 9px;
-        height: 9px;
+        width: rem(9px);
+        height: rem(9px);
         border-radius: 50%;
         background: $white;
         position: absolute;
@@ -38,4 +44,5 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    
 }

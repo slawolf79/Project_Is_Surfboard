@@ -1,35 +1,51 @@
 .bullets {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-content: center;
-  align-items: flex-end;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .bullets__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .bullet {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-right: 33px;
-  align-items: center;
+  margin-right: rem(33px);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .bullet__icon {
-  width: 34.69px;
-  height: 34.69px;
-  margin-right: 14px;
+  width: rem(34.69px);
+  height: rem(34.69px);
+  margin-right: rem(14px);
 }
 
 .bullet__text {
-  font-size: 16px;
+  font-size: rem(16px);
   font-weight: 700;
-  line-height: 18px;
-  width: 90px;
-  height: 36px;
+  line-height: 1.2;
+  width: rem(90px);
+  height: rem(36px);
 }
 
 .bullet:last-child {
-  margin-right: 0px;
+  margin-right: rem(0px);
 }

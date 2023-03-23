@@ -2,11 +2,12 @@
   background: url('../img/bg-surf.jpeg') center top 80% no-repeat;
   background-size: cover;
   height: 100vh;
-  min-height: 652px;
+  min-height: rem(652px);
   margin-top: 0;
   color: $white;
   font-weight: 700;
-  box-shadow: 0 4px 4px 0 #000000;
+  // box-shadow: 0 4px 4px 0 #000000;
+
 }
 
 .hero__container {
@@ -16,5 +17,8 @@
   height: 93%;
   flex: 1;
 
+  @include tablets {
+    height: 80%;
+  }
 }
 

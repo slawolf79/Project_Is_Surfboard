@@ -14,16 +14,16 @@
 .benefits__item::before {
   content: url("/img/snape.png");
   position: absolute;
-  top: 50px;
-  right: 0;
+  top: rem(50px);
+  right: rem(0px);
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
 }
 .benefits__item:first-child {
-  padding-left: 0;
+  padding-left: rem(0px);
 }
 .benefits__item:last-child {
-  padding-right: 0;
+  padding-right: rem(0px);
 }
 .benefits__item:last-child::before {
   display: none;
