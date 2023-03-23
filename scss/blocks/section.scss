@@ -20,6 +20,27 @@
   font-weight: 400;
 }
 
+.section__title-accord {
+  font-weight: 700;
+  font-size: rem(48px);
+  color: $white;
+  font-style: normal;
+  margin-top: rem(109px);
+  margin-left: rem(84px);
+  line-height: rem(58px);
+  
+  @include tablets {
+    margin-top: rem(85px);
+    margin-left: rem(40px);
+  }
+
+  @include phones {
+    margin-top: rem(76px);
+    margin-left: rem(10px);
+  }
+
+}
+
 .section__title-reviews {
   margin-bottom: rem(32px);
 }
@@ -30,3 +51,4 @@
   font-size: rem(48px);
   font-weight: 700;
 }
+
