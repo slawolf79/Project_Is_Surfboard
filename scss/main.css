@@ -210,26 +210,28 @@ img {
 @media screen and (max-width: 768px) {
   .menu.header-nav {
     position: fixed;
+    display: none;
     width: 100%;
     height: 100vh;
-    left: 100%;
+    left: 0;
     top: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    bottom: 0;
+    right: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    z-index: 4;
+    z-index: 1000;
+    overflow: hidden;
     background-color: #313131;
-    -webkit-transition: left 0.3s;
-    transition: left 0.3s;
+    margin: 0;
   }
-  .menu.header-nav--active {
-    left: 0;
+  .menu.header-nav.open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -636,6 +638,28 @@ img {
   font-weight: 400;
 }
 
+.section__title-accord {
+  font-weight: 700;
+  font-size: 2.6666666667rem;
+  color: #fff;
+  font-style: normal;
+  margin-top: 6.0555555556rem;
+  margin-left: 4.6666666667rem;
+  line-height: 3.2222222222rem;
+}
+@media screen and (max-width: 768px) {
+  .section__title-accord {
+    margin-top: 4.7222222222rem;
+    margin-left: 2.2222222222rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section__title-accord {
+    margin-top: 4.2222222222rem;
+    margin-left: 0.5555555556rem;
+  }
+}
+
 .section__title-reviews {
   margin-bottom: 1.7777777778rem;
 }
@@ -829,20 +853,243 @@ img {
   color: #666666;
 }
 
-.reviews__display {
-  background: #fff;
-  padding: 2.3333333333rem 2.3333333333rem 2.3333333333rem;
+.accord-menu {
+  background: url("/img/backSlider.jpg") left 40% top no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+@media screen and (max-width: 768px) {
+  .accord-menu {
+    position: relative;
+  }
 }
 
-.reviews__display:hover {
+.accord-menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+@media screen and (max-width: 480px) {
+  .accord-menu__list {
+    width: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+.accord-menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.accord-menu__item--active .accord-menu__content {
+  width: 29.1111111111rem;
+}
+@media screen and (max-width: 768px) {
+  .accord-menu__item--active .accord-menu__content {
+    width: 21.2222222222rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .accord-menu__item--active .accord-menu__content {
+    width: 17.6111111111rem;
+  }
+  .accord-menu__item--active .accord-menu__content--active {
+    width: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+  }
+}
+.accord-menu__item--active .accord-menu__close {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .accord-menu__item--active .hamburger.fullscreen-menu {
+    display: none;
+  }
+}
+
+.accord-menu__content {
+  background: rgba(51, 53, 55, 0.9);
+  width: 0;
+  overflow: hidden;
+  -webkit-transition: width 0.3s linear;
+  transition: width 0.3s linear;
+  -webkit-backdrop-filter: blur(0.2777777778rem);
+          backdrop-filter: blur(0.2777777778rem);
+  color: #fff;
+}
+@media screen and (max-width: 480px) {
+  .accord-menu__content {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.accord-menu__desc {
+  -webkit-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+  padding: 1.7222222222rem;
+  padding-left: 2.1111111111rem;
+  padding-right: 4.4444444444rem;
+  min-width: 29.1111111111rem;
+  font-size: 0.8888888889rem;
+  line-height: 1.3333333333rem;
+}
+@media screen and (max-width: 768px) {
+  .accord-menu__desc {
+    padding: 2.3333333333rem;
+    padding-right: 2.9444444444rem;
+    min-width: 16.6666666667rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .accord-menu__desc {
+    padding: 1.6111111111rem;
+    padding-right: 1.9444444444rem;
+    min-width: 11.1111111111rem;
+  }
+}
+
+.accord-menu__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  width: 7.2222222222rem;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+}
+@media screen and (max-width: 480px) {
+  .accord-menu__button {
+    width: 5rem;
+    font-size: 2.2222222222rem;
+  }
+}
+
+.accord-menu__container {
+  height: 100%;
+}
+
+.accord-menu__close {
+  display: none;
+  border: none;
+  background: transparent;
+  position: fixed;
+  padding-top: 1.1111111111rem;
+  padding-left: 26.1111111111rem;
+}
+@media screen and (max-width: 768px) {
+  .accord-menu__close {
+    padding-left: 17.7777777778rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .accord-menu__close {
+    padding-left: 13.6111111111rem;
+  }
+}
+
+.accord-menu__close-icon {
+  width: 1.1111111111rem;
+  height: 1.1111111111rem;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  fill: #fff;
+}
+
+.accord-menu__button-text {
+  color: #fff;
+  font-size: 2.6666666667rem;
+  font-weight: 700;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  left: 50%;
+  white-space: nowrap;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  padding: 2.1666666667rem;
+}
+
+.reviews {
+  margin-top: 1.7777777778rem;
+}
+@media screen and (max-width: 480px) {
+  .reviews {
+    margin-top: 1.4444444444rem;
+  }
+}
+
+.reviews__display {
   background: #F8FAF9;
+  padding: 2.3333333333rem;
+}
+@media screen and (max-width: 768px) {
+  .reviews__display {
+    padding-bottom: 2.5555555556rem;
+    margin-bottom: 1.7777777778rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .reviews__display {
+    padding: 3.1111111111rem 1.5rem 1.6666666667rem;
+    margin-bottom: 1.6666666667rem;
+  }
+}
+
+.reviews__list {
+  position: relative;
+  min-height: 15.5555555556rem;
+}
+
+.reviews__item {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  pointer-events: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+}
+.reviews__item--active {
+  position: absolute;
+  opacity: 1;
+  pointer-events: unset;
 }
 
 .reviews__display-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 3.1666666667rem;
 }
 @media screen and (max-width: 768px) {
   .reviews__display-inner {
@@ -867,6 +1114,18 @@ img {
   width: 14.0555555556rem;
   height: 14.6666666667rem;
 }
+@media screen and (max-width: 768px) {
+  .reviews__avatar {
+    width: 7.2222222222rem;
+    height: 7.2222222222rem;
+    margin-bottom: 1.7777777778rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .reviews__avatar {
+    margin-bottom: 1.5rem;
+  }
+}
 
 .reviews__avatar-img {
   -o-object-fit: cover;
@@ -879,7 +1138,15 @@ img {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 0 8%;
+  margin-left: 2.2222222222rem;
+}
+@media screen and (max-width: 768px) {
+  .reviews__content {
+    margin-left: 0rem;
+  }
+  .reviews__content:last-child {
+    margin-bottom: 0rem;
+  }
 }
 
 .reviews__title {
@@ -893,6 +1160,11 @@ img {
   font-weight: 400;
   margin-bottom: 1.3888888889rem;
   color: #292929;
+}
+@media screen and (max-width: 768px) {
+  .reviews__text {
+    margin-bottom: 0.8888888889rem;
+  }
 }
 
 .reviews__author {
@@ -916,6 +1188,8 @@ img {
   border-radius: 50%;
   overflow: hidden;
   position: relative;
+  text-align: center;
+  cursor: pointer;
 }
 .interactive-avatar--active {
   border-color: #FEDB3F;
