@@ -5,7 +5,6 @@ const fullMenu = document.querySelector('#hamburgerMenu');
 hamMenu.addEventListener("click", (e) => {
     e.preventDefault();
     hamMenu.classList.toggle('active');
-    fullMenu.classList.toggle('active');
     
 
 
