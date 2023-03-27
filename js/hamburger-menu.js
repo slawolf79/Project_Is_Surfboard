@@ -7,7 +7,7 @@ hamMenu.addEventListener("click", (e) => {
     hamMenu.classList.toggle('active');
     fullMenu.classList.toggle('active');
     
-    fullMenu.classList.toggle('active');
+
 
 });
 
