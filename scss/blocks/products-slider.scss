@@ -1,0 +1,53 @@
+.products-slider {
+  position: relative;
+
+  .bx-wrapper {
+      border: 0 !important;
+      background: transparent;
+      box-shadow: none;
+  }
+}
+
+.products-slider__arrow {
+  display: block;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  transform: translateY(-50%);
+  background: url(./img/prev.svg);
+  width: rem(14px);
+  height: rem(27px);
+  background-size: contain;
+  
+  @include tablets {
+      top: 40%;
+  }
+
+  @include phones {
+      top: 35%;
+  }
+
+  &--prev {
+      left: 0;
+      @include tablets {
+          left: rem(100px);
+      }
+
+      @include phones {
+          left: rem(10px);
+      }
+  }
+
+  &--next {
+      right: 0;
+      transform: rotate(-180deg);
+          
+      @include tablets {
+          right: rem(120px);
+      }
+
+      @include phones {
+          right: rem(10px);
+      }
+  }
+}

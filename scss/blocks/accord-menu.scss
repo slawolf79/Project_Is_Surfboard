@@ -11,10 +11,14 @@
   
 }
 
+
 .accord-menu__list {
   display: flex;
   justify-content: flex-end;
 
+  @include tablets {
+    justify-content: space-around;
+  }
   @include phones {
     width: 100%;
     justify-content: flex-end;
@@ -23,38 +27,39 @@
 
 .accord-menu__item {
   display: flex;
+  height: 100%;
 
-  &--active {
+  &.active {
     .accord-menu__content {
-        width: rem(524px);
+      width: rem(524px);
 
-        @include tablets {
-            width: rem(382px);
-        }
+      @include tablets {
+        width: rem(382px);
+        align-content: center;
+        z-index: 5;
+        position: absolute;
+        left: 18%;
+        height: 100%;
+        
+        
+      }
 
-        @include phones {
-            width: rem(317px);
-            &--active {
-              width: 100%;
-              justify-content: flex-end;
-              position: absolute;
-              left: 0;
-              right: 0;
-              top: 0;
-              bottom: 0;
-              z-index: 3;
-            }
-        }
+      @include phones {
+        width: rem(317px);
+        // width: 100%;
+        justify-content: flex-end;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 3;
+      }
     }
     .accord-menu__close {
-        display: block;
+      display: block;
     }
 
-    .hamburger.fullscreen-menu {
-        @include tablets {
-            display: none;
-        }
-    }
   }
 }
 
@@ -74,7 +79,7 @@
 
 .accord-menu__desc {
   transition: opacity 0.3s linear;
-  padding: rem(31px);
+  padding: rem(32px);
   padding-left: rem(38px);
   padding-right: rem(80px);
   min-width: rem(524px);
@@ -82,15 +87,15 @@
   line-height: rem(24px);
 
   @include tablets {
-      padding: rem(42px);
-      padding-right: rem(53px);
-      min-width: rem(300px);
+    padding: rem(42px);
+    padding-right: rem(53px);
+    min-width: rem(300px);
   }
   
   @include phones {
-      padding: rem(29px);
-      padding-right: rem(35px);
-      min-width: rem(200px);
+    padding-top: rem(40px);
+    padding-right: rem(50px);
+    min-width: rem(200px);
   }
 }
 
@@ -98,7 +103,7 @@
   display: flex;
   justify-content: center;
   position: relative;
-  width: rem(130px);
+  width: rem(110px);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -106,7 +111,7 @@
   // color: initial;
 
   @include phones {
-    width: rem(90px);
+    width: rem(80px);
     font-size: rem(40px);
   }
 }
@@ -121,15 +126,17 @@
   background: transparent;
   position: fixed;
   padding-top: rem(20px);
-  padding-left: rem(470px);
+  padding-left: rem(440px);
+
 
   @include tablets {
-      padding-left: rem(320px);
+      padding-left: rem(430px);
   }
 
   @include phones {
-      padding-left: rem(245px);
+      padding-left: rem(430px);
   }
+
 }
 
 .accord-menu__close-icon {
@@ -138,37 +145,38 @@
   cursor: pointer;
   transition: .3s;
   fill: $white;
+  color: #fff;
 }
 
-.accord-menu__button-text {
-  // position: absolute;
-  color: $white;
-  font-size: rem(48px);
-  font-weight: 700;
-  transform: rotate(-180deg);
-  left: 50%;
-  // bottom: rem(37px);
-  white-space: nowrap;
-  writing-mode: vertical-lr;
-  padding: rem(39px);
+// .accord-menu__button-text {
+//   // position: absolute;
+//   color: $white;
+//   font-size: rem(48px);
+//   font-weight: 700;
+//   transform: rotate(-180deg);
+//   left: 50%;
+//   // bottom: rem(37px);
+//   white-space: nowrap;
+//   writing-mode: vertical-lr;
+//   padding: rem(39px);
 
-}
+// }
 
 // alternative 
 
-// .accord-menu__button-text {
-//   position: absolute;
-//   color: #fff;
-//   font-size: 2.6666666667rem;
-//   font-weight: 700;
-//   -webkit-transform: rotate(-180deg);
-//   transform: rotate(-180deg) translateY(-100%);
-//   left: 76%;
-//   bottom: 2.0555555556rem;
-//   white-space: nowrap;
-//   -webkit-writing-mode: vertical-lr;
-//   -ms-writing-mode: tb-lr;
-//   writing-mode: vertical-lr;
-//   padding-top: 2.833333rem;
-//   transform-origin: 0 0;
-// }
+.accord-menu__button-text {
+  position: absolute;
+  color: #fff;
+  font-size: 2.6666666667rem;
+  font-weight: 700;
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg) translateY(-100%);
+  left: 76%;
+  bottom: 2.0555555556rem;
+  white-space: nowrap;
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: tb-lr;
+  writing-mode: vertical-lr;
+  padding-top: 2.833333rem;
+  transform-origin: 0 0;
+}

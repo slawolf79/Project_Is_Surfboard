@@ -35,7 +35,7 @@
     }
 }
 
-.hamburger--active {
+.hamburger.active {
     .hamburger__plank {
         &:nth-child(1) {
             opacity: 0;
@@ -49,6 +49,9 @@
             transform: rotate(-45deg) translateY(-6px) translateX(6px);
         }
     }
+    .header-nav {
+        display: flex;
+    } 
 }
 
 

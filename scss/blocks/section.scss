@@ -31,12 +31,12 @@
   
   @include tablets {
     margin-top: rem(85px);
-    margin-left: rem(40px);
+    margin-left: rem(10px);
   }
 
   @include phones {
     margin-top: rem(76px);
-    margin-left: rem(10px);
+    margin-left: rem(7px);
   }
 
 }
