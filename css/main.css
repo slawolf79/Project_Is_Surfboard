@@ -1012,7 +1012,7 @@ img {
 }
 
 .accord-menu {
-  background: url("./img/backSlider.jpg") left 40% top no-repeat;
+  background: url("../img/backSlider.jpg") left 40% top no-repeat;
   background-size: cover;
   display: flex;
   justify-content: space-between;
