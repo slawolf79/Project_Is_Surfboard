@@ -356,9 +356,7 @@ img {
 .hamburger.active .hamburger__plank:nth-child(3) {
   transform: rotate(-45deg) translateY(-6px) translateX(6px);
 }
-.hamburger.active .header-nav {
-  display: flex;
-}
+
 
 .banner {
   width: 46%;
