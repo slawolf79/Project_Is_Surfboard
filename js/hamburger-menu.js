@@ -5,8 +5,8 @@ const fullMenu = document.querySelector('#hamburgerMenu');
 hamMenu.addEventListener("click", (e) => {
     e.preventDefault();
     // находим цвет клика
-    hamMenu.classList.add('active');
-    fullMenu.classList.add('active');
+    hamMenu.classList.toggle('active');
+    fullMenu.classList.toggle('active');
 
 });
 
