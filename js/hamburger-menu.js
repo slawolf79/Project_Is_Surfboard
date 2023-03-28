@@ -7,10 +7,22 @@ hamMenu.addEventListener("click", (e) => {
     
     hamMenu.classList.toggle('active');
     fullMenu.classList.toggle('active');
-    
-
 
 });
+
+const links = document.querySelectorAll('.header-menu__link');
+// const body = document.querySelector('body');
+
+links.forEach(function(elem){
+    elem.addEventListener('click', switcherFullMenu);
+})
+
+function switcherFullMenu () {
+  hamMenu.classList.toggle('active');
+  fullMenu.classList.toggle('active');
+}
+
+
 
 
 

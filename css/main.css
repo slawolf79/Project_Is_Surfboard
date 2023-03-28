@@ -319,7 +319,7 @@ img {
   right: 3%;
   display: none;
   position: fixed;
-  z-index: 50;
+  z-index: 1010;
 }
 @media screen and (max-width: 768px) {
   .hamburger {
@@ -356,7 +356,6 @@ img {
 .hamburger.active .hamburger__plank:nth-child(3) {
   transform: rotate(-45deg) translateY(-6px) translateX(6px);
 }
-
 
 .banner {
   width: 46%;
@@ -1301,6 +1300,16 @@ img {
 .reviews__swicher {
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .reviews__swicher {
+    margin-top: 4.3333333333rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .reviews__swicher {
+    margin-top: 3.3333333333rem;
+  }
 }
 
 .interactive-avatar {

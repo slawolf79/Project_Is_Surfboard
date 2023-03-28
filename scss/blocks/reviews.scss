@@ -120,4 +120,10 @@
 .reviews__swicher {
   display: flex;
   justify-content: center;
+    @include tablets {
+      margin-top: rem(78px);
+    }
+    @include phones {
+      margin-top: rem(60px);
+    }
 }
