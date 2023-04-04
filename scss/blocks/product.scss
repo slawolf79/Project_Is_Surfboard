@@ -1,11 +1,11 @@
 .product__image {
-  padding-left: rem(70px);
   padding-right: rem(50px);
+  padding-left: rem(70px);
 
   @include tablets {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -17,9 +17,9 @@
   padding-right: rem(40px);
 
   @include tablets {
-      text-align: center;
-      align-items: center;
-      padding-right: rem(0px);
+    text-align: center;
+    align-items: center;
+    padding-right: rem(0px);
   }
 }
 
@@ -36,15 +36,15 @@
   justify-content: center;
 
   &:hover .parameters__drop {
-      opacity: 0.8;
-      display: flex;
+    opacity: 0.8;
+    display: flex;
   }
 
   @include tablets {
-      display: none;
-      height: rem(0px);
-      width: rem(0px);
-      margin-bottom: rem(0px);    
+    display: none;
+    height: rem(0px);
+    width: rem(0px);
+    margin-bottom: rem(0px);    
   }
 }
 
@@ -70,7 +70,7 @@
   margin-bottom: rem(24px);
 
   @include tablets {
-      margin-bottom: rem(14px);
+    margin-bottom: rem(14px);
   }
 }
 
@@ -78,12 +78,12 @@
   margin-bottom: rem(24px);
 
   @include tablets {
-      padding: rem(0px) rem(130px);
+    padding: rem(0px) rem(130px);
   }
 
   @include phones {
-      padding: rem(0px) rem(70px);
-      margin-bottom: rem(22px);
+    padding: rem(0px) rem(70px);
+    margin-bottom: rem(22px);
   }
 }
 
@@ -92,11 +92,11 @@
   margin-bottom: rem(12px);
 
   @include tablets {
-      padding-left: rem(90px);
+    padding-left: rem(90px);
   }
 
   @include phones {
-      padding-left: rem(60px);
+    padding-left: rem(60px);
   }
 }
 
@@ -113,6 +113,7 @@
 
 .product__content-elem {
   font-weight: 700;
+  color: black;
 }
 
 .product__price {
@@ -127,10 +128,10 @@
   padding-right: rem(25px);
 
   @include tablets {
-      padding-right: rem(35px);
+    padding-right: rem(35px);
   }
 
   @include phones {
-      padding-right: rem(20px);
+    padding-right: rem(20px);
   }
 }

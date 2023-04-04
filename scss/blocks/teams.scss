@@ -1,0 +1,129 @@
+.teams-section {
+    display: flex;
+    text-align: center;
+}
+
+.teams-section__title {
+    color: $black;
+    font-size: rem(48px);
+    margin-bottom: rem(53px);
+
+    @include tablets {
+        margin-bottom: rem(33px);
+    }
+
+    @include phones {
+        margin-bottom: rem(36px);
+    }
+}
+
+.teams {
+    display: flex;
+    // flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: rem(24px);
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-align: center;
+        padding: 0 10%;
+    }
+
+
+}
+
+.teams__item {
+    position: relative;
+    max-width: rem(220px);
+    margin-right: rem(20px);
+    flex: 1;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &.active {
+        .teams__title:after {
+            transform: rotate(-90deg);
+        }
+        .teams__member {
+            display: block;
+        }
+    }
+
+}
+
+.teams__member {
+    @include tablets {
+        display: none;
+
+
+    }
+}
+
+.teams__member-pic {
+    // width: 20%;
+    // height: 28%;
+    margin-bottom: rem(21px);
+
+    @include tablets {
+        margin-bottom: rem(20px);
+    }
+
+    @include phones {
+        margin-bottom: rem(17px);
+    }
+}
+
+.teams__title {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: rem(8px);
+    color: $black;
+    font-size: rem(21px);
+    font-weight: 700;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    text-transform: none;
+
+    &::after {
+        content: "";
+        display: inline-block;
+        // width: 9px;
+        // height: 9px;
+        border: rem(4.5px) solid transparent;
+        width: 0px;
+        height: 0px;
+        border-left-color: $black;
+        transform: rotate(90deg);
+        margin-left: rem(4px);
+            
+    }
+}
+
+.teams__content {
+    transition: height .3s;
+    overflow: hidden;
+    height: 0px;
+}
+
+
+
+.teams__position {
+    font-weight: 400;
+    color: #000;
+    margin-bottom: rem(4px);
+
+    @include tablets {
+        margin-bottom: 0;
+    }
+}
+
+.teams__desc {
+    font-weight: 300;
+    }

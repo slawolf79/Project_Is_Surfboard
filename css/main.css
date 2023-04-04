@@ -216,6 +216,12 @@ img {
   }
 }
 
+.header-menu__link {
+  color: #fff;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
 .logo {
   display: block;
   margin-right: 2.5555555556rem;
@@ -223,8 +229,8 @@ img {
 
 .menu {
   display: flex;
-  margin: 0 30px;
-  padding-top: 5px;
+  margin: 0rem 1.6666666667rem;
+  padding-top: 0.5555555556rem;
 }
 @media screen and (max-width: 768px) {
   .menu {
@@ -440,10 +446,9 @@ img {
   background: #FEDB3F;
   color: #000000;
 }
-
 .button--color--yellow:hover {
-  background: #000000;
   color: #FEDB3F;
+  background: #000;
   transition: 0.7s;
 }
 
@@ -714,6 +719,124 @@ img {
   color: #666666;
 }
 
+.teams-section {
+  display: flex;
+  text-align: center;
+}
+
+.teams-section__title {
+  color: #292929;
+  font-size: 2.6666666667rem;
+  margin-bottom: 2.9444444444rem;
+}
+@media screen and (max-width: 768px) {
+  .teams-section__title {
+    margin-bottom: 1.8333333333rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .teams-section__title {
+    margin-bottom: 2rem;
+  }
+}
+
+.teams {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.3333333333rem;
+}
+@media screen and (max-width: 768px) {
+  .teams {
+    flex-direction: column;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: center;
+    padding: 0 10%;
+  }
+}
+
+.teams__item {
+  position: relative;
+  max-width: 12.2222222222rem;
+  margin-right: 1.1111111111rem;
+  flex: 1;
+}
+.teams__item:last-child {
+  margin-right: 0;
+}
+.teams__item.active .teams__title:after {
+  transform: rotate(-90deg);
+}
+.teams__item.active .teams__member {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .teams__member {
+    display: none;
+  }
+}
+
+.teams__member-pic {
+  margin-bottom: 1.1666666667rem;
+}
+@media screen and (max-width: 768px) {
+  .teams__member-pic {
+    margin-bottom: 1.1111111111rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .teams__member-pic {
+    margin-bottom: 0.9444444444rem;
+  }
+}
+
+.teams__title {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.4444444444rem;
+  color: #292929;
+  font-size: 1.1666666667rem;
+  font-weight: 700;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  text-transform: none;
+}
+.teams__title::after {
+  content: "";
+  display: inline-block;
+  border: 0.25rem solid transparent;
+  width: 0px;
+  height: 0px;
+  border-left-color: #292929;
+  transform: rotate(90deg);
+  margin-left: 0.2222222222rem;
+}
+
+.teams__content {
+  transition: height 0.3s;
+  overflow: hidden;
+  height: 0px;
+}
+
+.teams__position {
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 0.2222222222rem;
+}
+@media screen and (max-width: 768px) {
+  .teams__position {
+    margin-bottom: 0;
+  }
+}
+
+.teams__desc {
+  font-weight: 300;
+}
+
 .parameters__drop {
   background-color: #fff;
   opacity: 0.8;
@@ -727,13 +850,13 @@ img {
   display: none;
 }
 .parameters__drop:after {
+  right: 0px;
   content: "";
   display: block;
   width: 100%;
   height: 0.5rem;
   position: absolute;
   bottom: 100%;
-  right: 0px;
 }
 
 .parameters__drop-left {
@@ -792,8 +915,8 @@ img {
 }
 
 .product__image {
-  padding-left: 3.8888888889rem;
   padding-right: 2.7777777778rem;
+  padding-left: 3.8888888889rem;
 }
 @media screen and (max-width: 768px) {
   .product__image {
@@ -913,6 +1036,7 @@ img {
 
 .product__content-elem {
   font-weight: 700;
+  color: black;
 }
 
 .product__price {
@@ -947,15 +1071,15 @@ img {
 }
 
 .products-slider__arrow {
-  display: block;
   position: absolute;
+  display: block;
+  background-size: contain;
   top: 50%;
   z-index: 10;
   transform: translateY(-50%);
-  background: url(./img/prev.svg);
+  background: url(/img/svg/prev.svg);
   width: 0.7777777778rem;
   height: 1.5rem;
-  background-size: contain;
 }
 @media screen and (max-width: 768px) {
   .products-slider__arrow {
@@ -993,6 +1117,11 @@ img {
   .products-slider__arrow--next {
     right: 0.5555555556rem;
   }
+}
+
+.products {
+  margin: 0;
+  padding: 0;
 }
 
 .products-section {
@@ -1308,7 +1437,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .reviews__swicher {
-    margin-top: 3.3333333333rem;
+    margin-top: 4.7222222222rem;
   }
 }
 

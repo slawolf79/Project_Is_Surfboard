@@ -13,13 +13,14 @@
 .button--color--yellow {
     background: $yellow;
     color: #000000;
+
+    &:hover {
+        color: $yellow;
+        background: #000;
+        transition: .7s;
+    }
 }
 
-.button--color--yellow:hover {
-    background: #000000;
-    color: $yellow;
-    transition: .7s;
-}
 
 .button--color--transparent {
     background: transparent;

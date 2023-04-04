@@ -11,13 +11,13 @@
   display: none;
   
   &:after {
-      content: "";
-      display: block;
-      width: 100%;
-      height: rem(9px);
-      position: absolute;
-      bottom: 100%;
-      right: 0px;
+    right: 0px;
+    content: "";
+    display: block;
+    width: 100%;
+    height: rem(9px);
+    position: absolute;
+    bottom: 100%;
   }
 }
 
@@ -38,7 +38,7 @@
   margin-bottom: rem(28px);
 
   &:last-child {
-      margin-bottom: rem(0px);
+    margin-bottom: rem(0px);
   }
 }
 
@@ -74,6 +74,6 @@
   margin-bottom: rem(28px);
 
   &:last-child {
-      margin-bottom: rem(0px);
+    margin-bottom: rem(0px);
   }
 }

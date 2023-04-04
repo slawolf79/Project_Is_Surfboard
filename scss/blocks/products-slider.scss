@@ -1,53 +1,62 @@
 .products-slider {
-  position: relative;
+    position: relative;
 
-  .bx-wrapper {
-      border: 0 !important;
-      background: transparent;
-      box-shadow: none;
-  }
+    .bx-wrapper {
+        border: 0 !important;
+        background: transparent;
+        box-shadow: none;
+    }
 }
 
 .products-slider__arrow {
-  display: block;
-  position: absolute;
-  top: 50%;
-  z-index: 10;
-  transform: translateY(-50%);
-  background: url(./img/prev.svg);
-  width: rem(14px);
-  height: rem(27px);
-  background-size: contain;
+    position: absolute;
+    display: block;
+    background-size: contain;
+    top: 50%;
+    z-index: 10;
+    transform: translateY(-50%);
+    background: url(/img/svg/prev.svg);
+    width: rem(14px);
+    height: rem(27px);
   
-  @include tablets {
-      top: 40%;
-  }
+    @include tablets {
+        top: 40%;
+    }
 
-  @include phones {
-      top: 35%;
-  }
+    @include phones {
+        top: 35%;
+    }
 
-  &--prev {
-      left: 0;
-      @include tablets {
-          left: rem(100px);
-      }
+    &--prev {
+        left: 0;
+        @include tablets {
+            left: rem(100px);
+        }
 
-      @include phones {
-          left: rem(10px);
-      }
-  }
+        @include phones {
+            left: rem(10px);
+        }
+    }
 
-  &--next {
-      right: 0;
-      transform: rotate(-180deg);
+    &--next {
+        right: 0;
+        transform: rotate(-180deg);
           
-      @include tablets {
-          right: rem(120px);
-      }
+        @include tablets {
+            right: rem(120px);
+        }
 
-      @include phones {
-          right: rem(10px);
-      }
-  }
+        @include phones {
+            right: rem(10px);
+        }
+    }
+}
+
+.products-slider {
+	// height: 536px;
+	// overflow: hidden;
+}
+.products {
+	margin: 0;
+	padding: 0;
 }

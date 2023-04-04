@@ -12,8 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css" />
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <link rel="stylesheet" href="./css/main.css" />
 </head>
 
@@ -30,7 +29,31 @@
                     <img src="./img/logo.png" class="logo__pic" />
                   </a>
                 </div>
-
+                <nav class="menu">
+                  <ul class="menu__list">
+                    <li class="menu__item menu__item--active">
+                      <a href="/" class="menu__link header-menu__link">О нас</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="#" class="menu__link">Серфборды</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="#" class="menu__link">Команда</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="#" class="menu__link">Меню</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="" class="menu__link">Отзывы</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="#" class="menu__link">Как мы работаем</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="#" class="menu__link">Контакты</a>
+                    </li>
+                  </ul>
+                </nav>
               </div>
               <div class="header__col header__col--align--right">
                 <address class="contacts header__contacts">
@@ -163,11 +186,11 @@
             <ul class="products">
               <li class="products__item">
                 <div class="product__image">
-                  <img src="./img/all.png" alt="boardspot" class="product__image-img">
+                  <img src="./img/all.png" alt="boardspot" class="product__image-img" />
                 </div>
                 <div class="product__container">
                   <a href="#" class="product__parameters">
-                    <img src="./img/arrows.png" alt="arrows" class="product__parameters-img">
+                    <img src="./img/arrows.png" alt="arrows" class="product__parameters-img" />
                     <p class="product__parameters--text">параметры</p>
                     <div class="parameters__drop">
                       <div class="parameters__drop-left">
@@ -175,7 +198,7 @@
                           <li class="parameters__drop-item">
                             <div class="parameters__drop-icon">
                               <svg class="parameters__drop-elem">
-                                <use xlink:href="./sprite.svg#length"></use>
+                                <use xlink:href="./scss/sprite.svg#length"></use>
                               </svg>
                             </div>
                             <p class="parameters__drop-text">Длина доски</p>
@@ -183,7 +206,7 @@
                           <li class="parameters__drop-item">
                             <div class="parameters__drop-icon">
                               <svg class="parameters__drop-elem">
-                                <use xlink:href="./sprite.svg#width"></use>
+                                <use xlink:href="./scss/sprite.svg#width"></use>
                               </svg>
                             </div>
                             <p class="parameters__drop-text">Ширина доски</p>
@@ -191,7 +214,7 @@
                           <li class="parameters__drop-item">
                             <div class="parameters__drop-icon">
                               <svg class="parameters__drop-elem">
-                                <use xlink:href="./sprite.svg#thickness"></use>
+                                <use xlink:href="./scss/sprite.svg#thickness"></use>
                               </svg>
                             </div>
                             <p class="parameters__drop-text">Толщина</p>
@@ -199,7 +222,7 @@
                           <li class="parameters__drop-item">
                             <div class="parameters__drop-icon">
                               <svg class="parameters__drop-elem">
-                                <use xlink:href="./sprite.svg#time"></use>
+                                <use xlink:href="./scss/sprite.svg#time"></use>
                               </svg>
                             </div>
                             <p class="parameters__drop-text">Срок службы</p>
@@ -207,7 +230,7 @@
                           <li class="parameters__drop-item">
                             <div class="parameters__drop-icon">
                               <svg class="parameters__drop-elem">
-                                <use xlink:href="./sprite.svg#weight"></use>
+                                <use xlink:href="./scss/sprite.svg#weight"></use>
                               </svg>
                             </div>
                             <p class="parameters__drop-text">Вес</p>
@@ -216,8 +239,12 @@
                       </div>
                       <div class="parameters__drop-right">
                         <ul class="parameters__drop-right--list">
-                          <li class="parameters__drop-right--item">от 2,5 м</li>
-                          <li class="parameters__drop-right--item">от 40 см</li>
+                          <li class="parameters__drop-right--item">
+                            от 2,5 м
+                          </li>
+                          <li class="parameters__drop-right--item">
+                            от 40 см
+                          </li>
                           <li class="parameters__drop-right--item">8 см</li>
                           <li class="parameters__drop-right--item">5 лет</li>
                           <li class="parameters__drop-right--item">7-8 кг</li>
@@ -228,9 +255,10 @@
                   <h2 class="product__title">Лонгборд 2.0</h2>
                   <div class="product__text">
                     <p>
-                      Устойчивая доска для новичков. На них легко лежать, сидеть, грести,
-                      разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать
-                      очень маленькие и пологие волны и не спеша, не прилагая особых усилий
+                      Устойчивая доска для новичков. На них легко лежать,
+                      сидеть, грести, разгребаться на волны и ехать. Размер и
+                      плавучесть доски позволяет брать очень маленькие и
+                      пологие волны и не спеша, не прилагая особых усилий
                       ехать по ним.
                     </p>
                   </div>
@@ -250,9 +278,172 @@
                   </div>
                 </div>
               </li>
-             
+              <li class="products__item">
+                <div class="product__image">
+                  <img src="./img/alltwo.png" alt="boardorange" class="product__image-img" />
+                </div>
+                <div class="product__container">
+                  <a href="#" class="product__parameters">
+                    <img src="./img/arrows.png" alt="arrows" class="product__parameters-img" />
+                    <p class="product__parameters--text">параметры</p>
+                    <div class="parameters__drop">
+                      <div class="parameters__drop-left">
+                        <ul class="parameters__drop-list">
+                          <li class="parameters__drop-item">
+                            <div class="parameters__drop-icon">
+                              <svg class="parameters__drop-elem">
+                                <use xlink:href="./scss/sprite.svg#length"></use>
+                              </svg>
+                            </div>
+                            <p class="parameters__drop-text">Длина доски</p>
+                          </li>
+                          <li class="parameters__drop-item">
+                            <div class="parameters__drop-icon">
+                              <svg class="parameters__drop-elem">
+                                <use xlink:href="./scss/sprite.svg#width"></use>
+                              </svg>
+                            </div>
+                            <p class="parameters__drop-text">Ширина доски</p>
+                          </li>
+                          <li class="parameters__drop-item">
+                            <div class="parameters__drop-icon">
+                              <svg class="parameters__drop-elem">
+                                <use xlink:href="./scss/sprite.svg#thickness"></use>
+                              </svg>
+                            </div>
+                            <p class="parameters__drop-text">Толщина</p>
+                          </li>
+                          <li class="parameters__drop-item">
+                            <div class="parameters__drop-icon">
+                              <svg class="parameters__drop-elem">
+                                <use xlink:href="./scss/sprite.svg#time"></use>
+                              </svg>
+                            </div>
+                            <p class="parameters__drop-text">Срок службы</p>
+                          </li>
+                          <li class="parameters__drop-item">
+                            <div class="parameters__drop-icon">
+                              <svg class="parameters__drop-elem">
+                                <use xlink:href="./scss/sprite.svg#weight"></use>
+                              </svg>
+                            </div>
+                            <p class="parameters__drop-text">Вес</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="parameters__drop-right">
+                        <ul class="parameters__drop-right--list">
+                          <li class="parameters__drop-right--item">
+                            от 2,5 м
+                          </li>
+                          <li class="parameters__drop-right--item">
+                            от 40 см
+                          </li>
+                          <li class="parameters__drop-right--item">8 см</li>
+                          <li class="parameters__drop-right--item">5 лет</li>
+                          <li class="parameters__drop-right--item">7-8 кг</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </a>
+                  <h2 class="product__title">Шортборд</h2>
+                  <div class="product__text">
+                    <p>
+                      Самые быстрые доски для профессионалов. Размеры
+                      шортбордов позволяют быстро набирать скорость, делать
+                      различные трюки на волне, включая резкие повороты и
+                      развороты, флоатеры (проезды по самому гребню волны),
+                      различные прыжки с вращениями или без, а также катание в
+                      трубах.
+                    </p>
+                  </div>
+                  <ul class="product__content">
+                    <li class="product__content-item">
+                      <div class="product__content-text">Длина доски</div>
+                      <p class="product__content-elem">от 1,5 метров</p>
+                    </li>
+                    <li class="product__content-item">
+                      <div class="product__content-text">Ширина доски</div>
+                      <p class="product__content-elem">от 30 сантиметров</p>
+                    </li>
+                  </ul>
+                  <div class="product__price">
+                    <div class="product__price-text">12000 ₽</div>
+                    <a href="#" class="button button--color--yellow">Заказать</a>
+                  </div>
+                </div>
+              </li>
             </ul>
           </div>
+        </div>
+      </section>
+      <section class="section teams-section">
+        <div class="container">
+          <h1 class="section__title teams-section__title">Команда</h1>
+          <ul class="teams">
+            <li class="teams__item">
+              <div class="teams__member">
+                <img src="./img/member-one.jpg" alt="member-one" class="teams__member-pic" />
+              </div>
+              <button class="teams__title" type="button">
+                Борис Федорович
+              </button>
+              <div class="teams__content">
+                <div class="teams__content-block">
+                  <div class="teams__position">Главный технолог</div>
+                  <div class="teams__desc">
+                    Отвечает за материалы и разработку досок
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="teams__item">
+              <div class="teams__member">
+                <img src="./img/member-two.jpg" alt="member-two" class="teams__member-pic" />
+              </div>
+              <button class="teams__title" type="button">
+                Ольга Невзорова
+              </button>
+              <div class="teams__content">
+                <div class="teams__content-block">
+                  <div class="teams__position">Дизайнер</div>
+                  <div class="teams__desc">Создает дизайн серфбордов</div>
+                </div>
+              </div>
+            </li>
+            <li class="teams__item">
+              <div class="teams__member">
+                <img src="./img/member-three.jpg" alt="member-three" class="teams__member-pic" />
+              </div>
+              <button class="teams__title" type="button">
+                Ингвар Нильсон
+              </button>
+              <div class="teams__content">
+                <div class="teams__content-block">
+                  <div class="teams__position">Спортсмен</div>
+                  <div class="teams__desc">
+                    Участвует в разработке серфбордов
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="teams__item">
+              <div class="teams__member">
+                <img src="./img/member-four.jpg" alt="member-four" class="teams__member-pic" />
+              </div>
+              <button class="teams__title" type="button">
+                Екатерина Иванова
+              </button>
+              <div class="teams__content">
+                <div class="teams__content-block">
+                  <div class="teams__position">Тестировщик</div>
+                  <div class="teams__desc">
+                    Отвечает за разработку новых продуктов
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -273,9 +464,10 @@
                   </svg>
                 </button>
                 <p class="accord-menu__desc">
-                  Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать.
-                  Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая
-                  особых усилий ехать по ним.
+                  Устойчивая доска для новичков. На них легко лежать, сидеть,
+                  грести, разгребаться на волны и ехать. Размер и плавучесть
+                  доски позволяет брать очень маленькие и пологие волны и не
+                  спеша, не прилагая особых усилий ехать по ним.
                 </p>
               </div>
             </div>
@@ -294,9 +486,10 @@
                   </svg>
                 </button>
                 <p class="accord-menu__desc">
-                  Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать.
-                  Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая
-                  особых усилий ехать по ним.
+                  Устойчивая доска для новичков. На них легко лежать, сидеть,
+                  грести, разгребаться на волны и ехать. Размер и плавучесть
+                  доски позволяет брать очень маленькие и пологие волны и не
+                  спеша, не прилагая особых усилий ехать по ним.
                 </p>
               </div>
             </div>
@@ -315,16 +508,16 @@
                   </svg>
                 </button>
                 <p class="accord-menu__desc">
-                  Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать.
-                  Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая
-                  особых усилий ехать по ним.
+                  Устойчивая доска для новичков. На них легко лежать, сидеть,
+                  грести, разгребаться на волны и ехать. Размер и плавучесть
+                  доски позволяет брать очень маленькие и пологие волны и не
+                  спеша, не прилагая особых усилий ехать по ним.
                 </p>
               </div>
             </div>
           </li>
         </ul>
       </section>
-
 
       <section class="section reviews-section">
         <div class="container">
@@ -344,8 +537,9 @@
                           Я увидела доски на сайте и влюбилась в их дизайн. К
                           летнему сезону я заказала себе доску в SurfBoard.
                           Дизайнер команды - волшебница! Она учла все мои
-                          предпочтения и комментарии. В итоге получился прекрасный
-                          дизайн. А я катаюсь на доске, которая мне нравится)
+                          предпочтения и комментарии. В итоге получился
+                          прекрасный дизайн. А я катаюсь на доске, которая мне
+                          нравится)
                         </p>
                       </div>
                       <div class="reviews__author">Ольга Макарова</div>
@@ -361,9 +555,11 @@
                       <h3 class="reviews__title">Нереальная скорость</h3>
                       <div class="reviews__text">
                         <p>
-                          Я занимаюсь профессиональным спортом. Доверил изготовление доски для соревнований ребятам из
-                          Surfboard и не пожалел: 1 место на соревнованиях. Нереальная скорость, устойчивая, удобная и
-                          легкая: всё что нужно для победы на соревнованиях!
+                          Я занимаюсь профессиональным спортом. Доверил
+                          изготовление доски для соревнований ребятам из
+                          Surfboard и не пожалел: 1 место на соревнованиях.
+                          Нереальная скорость, устойчивая, удобная и легкая:
+                          всё что нужно для победы на соревнованиях!
                         </p>
                       </div>
                       <div class="reviews__author">Марк Брюлов</div>
@@ -376,12 +572,16 @@
                       <img src="./img/reviews-avatar3.jpg" alt="serious man" class="reviews__avatar-img" />
                     </div>
                     <article class="reviews__content">
-                      <h3 class="reviews__title">Устойчивость и безопасность</h3>
+                      <h3 class="reviews__title">
+                        Устойчивость и безопасность
+                      </h3>
                       <div class="reviews__text">
                         <p>
-                          Я заказывал доски для своих детей. Мне было важно, чтобы они были устойчивые, так как
-                          безопасность детей на первом месте. Доски были изготовлены по индивидуальным замерам с учетом
-                          роста и веса каждого ребенка. Теперь дети катаются и им нравится!
+                          Я заказывал доски для своих детей. Мне было важно,
+                          чтобы они были устойчивые, так как безопасность
+                          детей на первом месте. Доски были изготовлены по
+                          индивидуальным замерам с учетом роста и веса каждого
+                          ребенка. Теперь дети катаются и им нравится!
                         </p>
                       </div>
                       <div class="reviews__author">Василий Поперечный</div>
@@ -590,22 +790,29 @@
       </li>
     </ul>
   </nav>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+    integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"
+  <script src="./js/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"
     integrity="sha512-YYiD5ZhmJ0GCdJvx6Xe6HzHqHvMpJEPomXwPbsgcpMFPW+mQEeVBU6l9n+2Y+naq+CLbujk91vHyN18q6/RSYw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.5/mobile-detect.min.js"
     integrity="sha512-1vJtouuOb2tPm+Jh7EnT2VeiCoWv0d7UQ8SGl/2CoOU+bkxhxSX4gDjmdjmbX4OjbsbCBN+Gytj4RGrjV3BLkQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-  <script src="./js/jquery-3.6.4.js"></script>
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+    integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"
+    integrity="sha512-p55Bpm5gf7tvTsmkwyszUe4oVMwxJMoff7Jq3J/oHaBk+tNQvDKNz9/gLxn9vyCjgd6SAoqLnL13fnuZzCYAUA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
   <script src="./js/reviews.js"></script>
   <script src="./js/accord-menu.js"></script>
   <script src="./js/hamburger-menu.js"></script>
   <script src="./js/slider.js"></script>
-  </body>
+  <script src="./js/teams.js"></script>
+</body>
 
 </html>
