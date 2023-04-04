@@ -76,6 +76,7 @@
     height: 54%;
     text-align: center;
     font-size: rem(36px);
+    font-weight: 400;
   }
 }
 
@@ -88,7 +89,5 @@
 
 .header-menu__link {
   color: $white;
-  font-weight: 400;
-  font-size: rem(36px);
 }
 

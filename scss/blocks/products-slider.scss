@@ -15,7 +15,7 @@
     top: 50%;
     z-index: 10;
     transform: translateY(-50%);
-    background: url(/img/svg/prev.svg);
+    background: url('../img/svg/prev.svg');
     width: rem(14px);
     height: rem(27px);
   
@@ -52,10 +52,10 @@
     }
 }
 
-.products-slider {
-	// height: 536px;
-	// overflow: hidden;
-}
+// .products-slider {
+// 	// height: 536px;
+// 	// overflow: hidden;
+// }
 .products {
 	margin: 0;
 	padding: 0;

@@ -207,6 +207,7 @@ img {
     height: 54%;
     text-align: center;
     font-size: 2rem;
+    font-weight: 400;
   }
 }
 
@@ -218,8 +219,6 @@ img {
 
 .header-menu__link {
   color: #fff;
-  font-weight: 400;
-  font-size: 2rem;
 }
 
 .logo {
@@ -1077,7 +1076,7 @@ img {
   top: 50%;
   z-index: 10;
   transform: translateY(-50%);
-  background: url(/img/svg/prev.svg);
+  background: url("../img/svg/prev.svg");
   width: 0.7777777778rem;
   height: 1.5rem;
 }
