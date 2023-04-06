@@ -617,7 +617,7 @@ img {
   position: relative;
 }
 .benefits__item::before {
-  content: url("/img/snape.png");
+  content: url("../img/snape.png");
   position: absolute;
   top: 2.7777777778rem;
   right: 0rem;
@@ -1781,6 +1781,38 @@ img {
 }
 .socials__icon:hover {
   stroke: #292929;
+}
+
+.modal {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 2.0555555556rem 3.6666666667rem;
+}
+.modal.error-modal .modal__content {
+  color: red;
+}
+
+@media screen and (max-width: 480px) {
+  .modal__container {
+    right: 23%;
+    left: 23%;
+  }
+}
+
+.modal__content {
+  font-weight: 500;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.modal_button-container {
+  padding: 0;
+  margin: 0;
+}
+
+.input-error {
+  border-color: firebrick;
 }
 
 /*# sourceMappingURL=main.css.map */

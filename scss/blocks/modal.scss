@@ -1,0 +1,36 @@
+.modal {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: rem(37px) rem(66px);
+
+  &.error-modal {
+    .modal__content {
+        color: red;
+    }
+  }
+}
+
+.modal__container {
+  @include phones {
+    right: 23%;
+    left: 23%;
+  }
+}
+
+.modal__content {
+  font-weight: 500;
+  color: black;
+  margin-bottom: rem(18px);
+}
+
+.modal_button-container {
+  padding: 0;
+  margin: 0;
+}
+
+.input-error {
+  border-color: firebrick;
+}
+
+

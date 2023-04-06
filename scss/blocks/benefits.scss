@@ -15,7 +15,7 @@
   position: relative;
 
   &::before {
-    content: url('/img/snape.png');
+    content: url('../img/snape.png');
     position: absolute;
     top: rem(50px);
     right: rem(0px);
