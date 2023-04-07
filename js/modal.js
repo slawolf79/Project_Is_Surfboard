@@ -37,15 +37,18 @@ $(".form").submit((e) => {
         comment: comment.val(),
         to: to.val(),
       },
-      error: (data) => {},
+      // dataType: 'json',
+      
+      error: data => {
+      }
     });
 
-    request.done((data) => {
-      content.text(data.message);
-      //console.log(data);
+    request.done(data => {
+      content.text(data.message)
+      
     });
 
-    request.fail((data) => {
+    request.fail(data => {
       const message = data.responseJSON.message;
       content.text(message);
       modal.addClass("error-modal");
@@ -54,9 +57,9 @@ $(".form").submit((e) => {
     request.always(() => {
       $.fancybox.open({
         src: "#modal",
-        type: "inline",
+        type: "inline"
       });
-    });
+    })
   }
 });
 
