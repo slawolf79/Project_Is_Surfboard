@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap"
     rel="stylesheet" />
+  <link rel="stylesheets" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <link rel="stylesheet" href="./css/main.css" />
@@ -19,7 +20,7 @@
 <body>
   <div class="wrapper">
     <div class="wrapper__content">
-      <section class="hero">
+      <section data-sidemenu-theme="white" data-section-id="hero" class="hero section">
         <div class="container hero__container">
           <header class="header">
             <div class="header__container">
@@ -32,25 +33,25 @@
                 <nav class="menu">
                   <ul class="menu__list">
                     <li class="menu__item menu__item--active">
-                      <a href="/" class="menu__link header-menu__link">О нас</a>
+                      <a href="/" class="menu__link header-menu__link" data-scroll-to="benefits-section">О нас</a>
                     </li>
                     <li class="menu__item">
-                      <a href="#" class="menu__link">Серфборды</a>
+                      <a href="#" class="menu__link" data-scroll-to="products-section">Серфборды</a>
                     </li>
                     <li class="menu__item">
-                      <a href="#" class="menu__link">Команда</a>
+                      <a href="#" class="menu__link" data-scroll-to="team-section">Команда</a>
                     </li>
                     <li class="menu__item">
-                      <a href="#" class="menu__link">Меню</a>
+                      <a href="#" class="menu__link" data-scroll-to="accord-menu">Меню</a>
                     </li>
                     <li class="menu__item">
-                      <a href="#" class="menu__link">Отзывы</a>
+                      <a href="#" class="menu__link" data-scroll-to="reviews">Отзывы</a>
                     </li>
                     <li class="menu__item">
-                      <a href="#" class="menu__link">Как мы работаем</a>
+                      <a href="#" class="menu__link" data-scroll-to="video-section">Как мы работаем</a>
                     </li>
                     <li class="menu__item">
-                      <a href="#" class="menu__link">Контакты</a>
+                      <a href="#" class="menu__link" data-scroll-to="map-section">Контакты</a>
                     </li>
                   </ul>
                 </nav>
@@ -74,7 +75,7 @@
               Профессиональные доски для серфинга
             </h1>
             <p class="banner__text">Самый большой выбор серфбордов в мире</p>
-            <button type="submit" class="button button--color--yellow">
+            <button type="submit" data-scroll-to="order-section" class="button button--color--yellow">
               Заказать
             </button>
           </div>
@@ -108,7 +109,7 @@
           </section>
         </div>
       </section>
-      <section class="section benefits-section">
+      <section data-sidemenu-theme="black" data-section-id="benefits-section" class="section benefits-section">
         <div class="container">
           <div class="headline">
             <h2 class="section__title headline__title">Почему Surfboard?</h2>
@@ -274,7 +275,7 @@
                   </ul>
                   <div class="product__price">
                     <div class="product__price-text">7000 ₽</div>
-                    <a href="#" class="button button--color--yellow">Заказать</a>
+                    <a href="#" data-scroll-to="order-section" class="button button--color--yellow">Заказать</a>
                   </div>
                 </div>
               </li>
@@ -377,7 +378,7 @@
           </div>
         </div>
       </section>
-      <section class="section teams-section">
+      <section data-sidemenu-theme="black" data-section-id="team-section" class="section teams-section">
         <div class="container">
           <h1 class="section__title teams-section__title">Команда</h1>
           <ul class="teams">
@@ -447,7 +448,7 @@
         </div>
       </section>
 
-      <section class="section accord-menu">
+      <section data-sidemenu-theme="white" data-section-id="accord-menu" class="section accord-menu">
         <h2 class="section__title section__title-accord">Меню</h2>
         <ul class="accord-menu__list" id="verticalMenu">
           <li class="accord-menu__item">
@@ -519,7 +520,7 @@
         </ul>
       </section>
 
-      <section class="section reviews-section">
+      <section data-sidemenu-theme="black" data-section-id="reviews-section" class="section reviews-section">
         <div class="container">
           <h2 class="section__title section__title-reviews">Отзывы</h2>
           <div class="reviews">
@@ -610,7 +611,34 @@
           </div>
         </div>
       </section>
-      <section class="section order-section">
+      <section data-sidemenu-theme="black" data-section-id="video-section" class="video-section section">
+        <div class="container">
+          <h2 class="section__title video-section__title">Как мы работаем</h2>
+          <div class="video-section__container">
+            <div class="video-player">
+              <div class="video-player__wrapper">
+                <video id="yt-video" class="video-player__elem"></video>
+                <div class="video-player__splash">
+                  <svg class="video-player__splash-elem">
+                    <use xlink:href="./scss/sprite.svg#play-icon"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="video-player__controls">
+                <button class="video-player__start"></button>
+                <div class="video-player__playback">
+                  <button class="video-player__playback-button"></button>
+                </div>
+                <div class="video-player__duration">
+                  <span class="video-player__duration-completed">0:00</span> :
+                  <span class="video-player__duration-estimate">0:00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-sidemenu-theme="black" data-section-id="order-section" class="section order-section">
         <div class="container">
           <h2 class="section__title section__title-order">Закажите доску</h2>
           <form class="form">
@@ -689,10 +717,8 @@
           </form>
         </div>
       </section>
-      <section class="section map-section">
-        <div class="map">
-          <img src="./img/map.jpg" alt="map" />
-        </div>
+      <section data-sidemenu-theme="black" data-section-id="map-section" class="section map-section">
+        <div id="map" class="map"></div>
         <footer class="footer">
           <div class="container footer__container">
             <address class="contacts footer__contacts">
@@ -732,32 +758,32 @@
 
   <nav class="fixed-menu">
     <ul class="fixed-menu__list">
-      <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__link"></a>
-      </li>
-      <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__link"></a>
-      </li>
-      <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__link"></a>
-      </li>
       <li class="fixed-menu__item fixed-menu__item--active">
-        <a href="" class="fixed-menu__link"></a>
+        <a href="" class="fixed-menu__link" data-scroll-to="hero"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__link"></a>
+        <a href="" class="fixed-menu__link" data-scroll-to="benefits-section"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__link"></a>
+        <a href="" class="fixed-menu__link" data-scroll-to="products-section"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__link"></a>
+        <a href="" class="fixed-menu__link" data-scroll-to="team-section"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__link"></a>
+        <a href="" class="fixed-menu__link" data-scroll-to="accord-menu"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__link"></a>
+        <a href="" class="fixed-menu__link" data-scroll-to="reviews"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="" class="fixed-menu__link" data-scroll-to="video-section"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="" class="fixed-menu__link" data-scroll-to="order-section"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="" class="fixed-menu__link" data-scroll-to="map-section"></a>
       </li>
     </ul>
   </nav>
@@ -777,25 +803,25 @@
   <nav class="menu header-nav header-nav" id="hamburgerMenu">
     <ul class="menu__list header-menu">
       <li class="menu__item menu__item--active header-menu__item">
-        <a href="/" class="menu__link header-menu__link">О нас</a>
+        <a href="/" class="menu__link header-menu__link" data-scroll-to="benefits-section">О нас</a>
       </li>
       <li class="menu__item header-menu__item">
-        <a href="#" class="menu__link header-menu__link">Серфборды</a>
+        <a href="#" class="menu__link header-menu__link" data-scroll-to="products-section">Серфборды</a>
       </li>
       <li class="menu__item header-menu__item">
-        <a href="#" class="menu__link header-menu__link">Команда</a>
+        <a href="#" class="menu__link header-menu__link" data-scroll-to="teams-section">Команда</a>
       </li>
       <li class="menu__item header-menu__item">
-        <a href="#" class="menu__link header-menu__link">Меню</a>
+        <a href="#" class="menu__link header-menu__link" data-scroll-to="accord-menu">Меню</a>
       </li>
       <li class="menu__item header-menu__item">
-        <a href="" class="menu__link header-menu__link">Отзывы</a>
+        <a href="" class="menu__link header-menu__link" data-scroll-to="reviews">Отзывы</a>
       </li>
       <li class="menu__item header-menu__item">
-        <a href="#" class="menu__link header-menu__link">Как мы работаем</a>
+        <a href="#" class="menu__link header-menu__link" data-scroll-to="video-section">Как мы работаем</a>
       </li>
       <li class="menu__item header-menu__item">
-        <a href="#" class="menu__link header-menu__link">Контакты</a>
+        <a href="#" class="menu__link header-menu__link" data-scroll-to="map-section">Контакты</a>
       </li>
     </ul>
   </nav>
@@ -807,24 +833,37 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"
-    integrity="sha512-YYiD5ZhmJ0GCdJvx6Xe6HzHqHvMpJEPomXwPbsgcpMFPW+mQEeVBU6l9n+2Y+naq+CLbujk91vHyN18q6/RSYw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.5/mobile-detect.min.js"
-    integrity="sha512-1vJtouuOb2tPm+Jh7EnT2VeiCoWv0d7UQ8SGl/2CoOU+bkxhxSX4gDjmdjmbX4OjbsbCBN+Gytj4RGrjV3BLkQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+      integrity="sha512-YYiD5ZhmJ0GCdJvx6Xe6HzHqHvMpJEPomXwPbsgcpMFPW+mQEeVBU6l9n+2Y+naq+CLbujk91vHyN18q6/RSYw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.5/mobile-detect.min.js"
+      integrity="sha512-1vJtouuOb2tPm+Jh7EnT2VeiCoWv0d7UQ8SGl/2CoOU+bkxhxSX4gDjmdjmbX4OjbsbCBN+Gytj4RGrjV3BLkQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
     integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"
-    integrity="sha512-p55Bpm5gf7tvTsmkwyszUe4oVMwxJMoff7Jq3J/oHaBk+tNQvDKNz9/gLxn9vyCjgd6SAoqLnL13fnuZzCYAUA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+      integrity="sha512-p55Bpm5gf7tvTsmkwyszUe4oVMwxJMoff7Jq3J/oHaBk+tNQvDKNz9/gLxn9vyCjgd6SAoqLnL13fnuZzCYAUA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"
+    integrity="sha512-YYiD5ZhmJ0GCdJvx6Xe6HzHqHvMpJEPomXwPbsgcpMFPW+mQEeVBU6l9n+2Y+naq+CLbujk91vHyN18q6/RSYw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.5/mobile-detect.min.js"
+    integrity="sha512-1vJtouuOb2tPm+Jh7EnT2VeiCoWv0d7UQ8SGl/2CoOU+bkxhxSX4gDjmdjmbX4OjbsbCBN+Gytj4RGrjV3BLkQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+  </script>
+  <script src="./js/ops.js"></script>
   <script src="./js/reviews.js"></script>
   <script src="./js/accord-menu.js"></script>
   <script src="./js/hamburger-menu.js"></script>
   <script src="./js/slider.js"></script>
   <script src="./js/teams.js"></script>
   <script src="./js/modal.js"></script>
+  <script src="./js/map-section.js"></script>
+  <script src="./js/video-player.js"></script>
+
 </body>
 
 </html>

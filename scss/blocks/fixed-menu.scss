@@ -1,6 +1,6 @@
 .fixed-menu {
     position: fixed;
-    top: 40%;
+    top: 50%;
     right: 3%;
     z-index: $z-fixed-menu;
 
@@ -45,4 +45,16 @@
         transform: translate(-50%, -50%);
     }
     
+}
+
+.fixed-menu--shadowed {
+
+    .fixed-menu__item--active {
+        .fixed-menu__link{
+            border-color: black;
+        }
+    }
+    .fixed-menu__link::before {
+        background: black;
+    }
 }

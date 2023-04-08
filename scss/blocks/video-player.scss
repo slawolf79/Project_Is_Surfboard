@@ -1,0 +1,150 @@
+.video-section {
+  background: #F8FAF9;
+}
+
+.video-section__title {
+  margin-bottom: rem(31px);
+
+
+  @include tablets {
+    margin-bottom: rem(40px); 
+  }
+}
+
+.video-section__container {
+  margin: rem(0px) rem(139px);
+  height: rem(392px);
+
+  @include tablets {
+    margin: 0px 87px;
+    height: 352px;
+  }
+
+  @include phones {
+    margin: rem(0px) rem(43px);
+    height: rem(233px);
+  }
+}
+
+
+.video-player {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  &.active .video-player__splash {
+    display: none;
+  }
+
+  &.paused {
+    .video-player__start {
+      border: none;
+    }
+  }
+}
+
+.video-player__wrapper {
+  height: 100%;
+}
+
+#yt-video {
+  @include tablets {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.video-player__splash {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.video-player__splash-elem {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  cursor: pointer;
+
+  @include tablets {
+    top: 36%;
+    left: 45%;
+    width: rem(67px);
+    height: rem(98px);
+  }
+
+  @include phones {
+    width: rem(45px);
+    height: rem(65px);
+  }
+}
+
+.video-player__controls {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: rem(35px);
+  background: #404040;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 rem(17px);
+
+  @include tablets {
+    padding: 0 rem(10px);
+  }
+}
+
+.video-player__start {
+  background: url(/img/svg/play-start.svg);
+  width: rem(11px);
+  height: rem(16px);
+  border: none;
+
+  @include phones {
+    padding-right: rem(12px);
+  }
+}
+
+.video-player__playback {
+  position: relative;
+  height: rem(16px);
+  width: rem(446px);
+  
+  &:before {
+    content: "";
+    height: rem(7px);
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 0;
+    right: 0;
+    background: #626262;
+    transform: translateY(-50%);
+  }
+
+  @include tablets {
+    width: rem(450px);
+  }
+
+  @include phones {
+    width: rem(250px);
+  }
+}
+
+.video-player__playback-button {
+  background: $yellow;
+  border-radius: rem(50px);
+  border: none;
+  width: rem(16px);
+  height: rem(16px);
+  position: absolute;
+  padding: 0px;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+}

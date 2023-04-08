@@ -27,6 +27,10 @@
         top: 35%;
     }
 
+    @include phones-small {
+        top: 30%;
+    }
+
     &--prev {
         left: 0;
         @include tablets {
@@ -56,7 +60,4 @@
 // 	// height: 536px;
 // 	// overflow: hidden;
 // }
-.products {
-	margin: 0;
-	padding: 0;
-}
+

@@ -67,7 +67,7 @@ $(".accord-menu__button").on("click", e => {
   }
 })
 
-$(".accord-menu__close").on("click", e => {
+$(".accord-menu__close"),$(".accord-menu__content").on("click", e => {
   e.preventDefault();
 
   const $this = $(e.currentTarget);
