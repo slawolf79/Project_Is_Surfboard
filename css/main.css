@@ -1953,7 +1953,7 @@ img {
 }
 
 .video-player__start {
-  background: url(/img/svg/play-start.svg);
+  background: url("/img/svg/play-start.svg");
   width: 0.6111111111rem;
   height: 0.8888888889rem;
   border: none;
@@ -1969,7 +1969,7 @@ img {
   height: 0.8888888889rem;
   width: 24.7777777778rem;
 }
-.video-player__playback:before {
+.video-player__playback::before {
   content: "";
   height: 0.3888888889rem;
   position: absolute;

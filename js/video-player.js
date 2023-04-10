@@ -20,7 +20,7 @@ let eventsInit = () => {
       (player.getDuration() / 100) * newButtonPositionPercent;
 
     $(".video-player__playback-button").css({
-      left: `${newButtonPositionPercent}%`,
+      left: `${newButtonPositionPercent}%`
     });
 
     player.seekTo(newPlaybackPositionSec);
