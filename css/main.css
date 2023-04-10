@@ -1953,11 +1953,7 @@ img {
 }
 
 .video-player__start {
-<<<<<<< HEAD
-  background: url("/img/svg/play-start.svg");
-=======
   background: url("../img/svg/play-start.svg");
->>>>>>> 213532ccf0bc70ed8d9e40f4dc2801f8d8d0c258
   width: 0.6111111111rem;
   height: 0.8888888889rem;
   border: none;
