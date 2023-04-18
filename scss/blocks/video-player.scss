@@ -26,15 +26,16 @@
   }
 }
 
-
 .video-player {
   position: relative;
   display: block;
   width: 100%;
   height: 100%;
 
-  &.active .video-player__splash {
-    display: none;
+  &.active {
+    .video-player__splash {
+      display: none;
+    }
   }
 
   &.paused {
@@ -100,7 +101,7 @@
 }
 
 .video-player__start {
-  background: url(/img/svg/play-start.svg);
+  background: url("/img/svg/play-start.svg");
   width: rem(11px);
   height: rem(16px);
   border: none;
@@ -115,7 +116,7 @@
   height: rem(16px);
   width: rem(446px);
   
-  &:before {
+  &::before {
     content: "";
     height: rem(7px);
     position: absolute;
