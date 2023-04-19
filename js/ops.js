@@ -8,10 +8,9 @@ const isMobile = mobileDetect.mobile();
 
 let inScroll = false;
 
-
 sections.first().addClass("active");
 
-const countSectionPosition = sectionEq => {
+const countSectionPosition = (sectionEq) => {
   const position = sectionEq * -100;
   if (isNaN(position)) {
     console.log("передано неверное значение в countSectionPosition");
@@ -24,7 +23,7 @@ const changeMenuThemeForSection = (sectionEq) => {
   const currentSection = sections.eq(sectionEq);
   const menuTheme = currentSection.attr("data-sidemenu-theme");
   const activeClass = "fixed-menu--shadowed";
-  
+
   if (menuTheme === "black") {
     sideMenu.addClass(activeClass);
   } else {
@@ -37,28 +36,27 @@ const resetActiveClassForItem = (items, itemEq, activeClass) => {
 };
 
 const performTransition = (sectionEq) => {
-  
-  if (inScroll) return; 
+  if (inScroll) return;
 
-    const transitionOver = 1000;
-    const mouseInertiaOver = 300;
-    
-    inScroll = true;
+  const transitionOver = 1000;
+  const mouseInertiaOver = 300;
 
-    const position = countSectionPosition(sectionEq);
+  inScroll = true;
 
-    changeMenuThemeForSection(sectionEq);
-  
-    display.css({
-      transform: `translateY(${position}%`,
-    });
+  const position = countSectionPosition(sectionEq);
 
-    resetActiveClassForItem(sections, sectionEq, "active");
+  changeMenuThemeForSection(sectionEq);
 
-    setTimeout(() => {
-      inScroll = false;
-      resetActiveClassForItem(menuItems, sectionEq, "fixed-menu__item--active");
-    }, transitionOver + mouseInertiaOver);
+  display.css({
+    transform: `translateY(${position}%`,
+  });
+
+  resetActiveClassForItem(sections, sectionEq, "active");
+
+  setTimeout(() => {
+    inScroll = false;
+    resetActiveClassForItem(menuItems, sectionEq, "fixed-menu__item--active");
+  }, transitionOver + mouseInertiaOver);
 };
 //альтернатива: вызов события transitionend//
 
